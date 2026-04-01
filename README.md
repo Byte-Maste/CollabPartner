@@ -104,3 +104,7 @@ Krishna Choudhary
 ## Repository
 
 https://github.com/Byte-Maste/CollabPartner
+
+## Shipped APK (Free Download)
+
+https://github.com/Byte-Maste/CollabPartner/releases/tag/app-demo-v1.0.0
