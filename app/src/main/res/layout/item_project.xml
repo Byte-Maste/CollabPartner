@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_bg"
+    android:padding="18dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="12dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btnDelete"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:padding="4dp"
+            android:src="@drawable/ic_delete"
+            tools:visibility="visible"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/projectTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text"
+            android:layout_marginRight="30dp"
+            android:fontFamily="sans-serif-medium"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/projectDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textSecondary"
+        android:paddingTop="8dp"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:fontFamily="sans-serif-medium"/>
+
+    <TextView
+        android:id="@+id/githubLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text"
+        android:paddingTop="8dp"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/link"
+        android:fontFamily="sans-serif-medium"/>
+
+    <Button
+        android:id="@+id/btnLiveDemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Live Demo"
+        android:backgroundTint="@color/text"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"/>
+
+
+</LinearLayout>

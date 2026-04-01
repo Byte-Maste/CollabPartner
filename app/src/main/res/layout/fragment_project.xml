@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Projects"
+            android:textColor="@color/text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-medium"
+            />
+
+    <Button
+        android:id="@+id/btnNewProject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Project"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_button"
+        android:drawableLeft="@drawable/ic_add"
+        app:backgroundTint="@null"
+        android:backgroundTint="@null"
+        android:stateListAnimator="@null"
+        android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/projectRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+
+</LinearLayout>

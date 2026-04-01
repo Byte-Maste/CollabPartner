@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Events"
+            android:textColor="@color/text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-medium"
+            />
+
+        <Button
+            android:id="@+id/btnNewEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Event"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_button"
+            android:drawableLeft="@drawable/ic_add"
+            app:backgroundTint="@null"
+            android:backgroundTint="@null"
+            android:stateListAnimator="@null"
+            android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/eventRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/filterRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:layout_marginBottom="8dp">
+
+        <RadioButton
+            android:id="@+id/radioAll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="All Events"
+            android:checked="true"
+            android:background="@drawable/selector_tab"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/selector_tab_text"/>
+
+        <RadioButton
+            android:id="@+id/radioMy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="My Upcoming"
+            android:background="@drawable/selector_tab"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/selector_tab_text"/>
+    </RadioGroup>
+
+
+</LinearLayout>

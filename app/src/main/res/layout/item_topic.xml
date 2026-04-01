@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_bg"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/topicTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Python Basics"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/text"/>
+
+        <ImageView
+            android:id="@+id/btnShareTopic"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_share"
+            android:padding="6dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Share topic"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/topicDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn the core syntax and data structures."
+        android:textSize="14sp"
+        android:textColor="@color/textSecondary"
+        android:layout_marginTop="4dp"/>
+
+    <ProgressBar
+        android:id="@+id/topicProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="0"
+        android:max="100"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

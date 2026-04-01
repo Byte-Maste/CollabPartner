@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suggested Connections"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/text"/>
+
+        <FrameLayout
+            android:id="@+id/btnRequestsFrame"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/btnRequests"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_email"
+                android:padding="5dp"
+                android:tint="@color/text"/>
+
+            <TextView
+                android:id="@+id/requestCountBadge"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:text="0"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@drawable/circle_bg_white"
+                android:backgroundTint="#F44336"
+                android:gravity="center"
+                android:layout_gravity="top|end"
+                android:visibility="gone"/> </FrameLayout>
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/input_bg"
+        android:hint="Search for people, skills..."
+        android:paddingHorizontal="16dp"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="10dp"
+        android:textColor="@color/text"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/collabRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="20dp"/>
+
+</LinearLayout>

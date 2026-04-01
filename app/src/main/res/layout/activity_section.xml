@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".SectionActivity">
+
+    <!-- TOP TOOLBAR -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="56dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="12dp"
+        android:background="@android:color/white"
+        app:titleTextColor="@color/text"
+        app:subtitleTextColor="@color/textSecondary">
+
+        <!-- LOGO -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="10dp"
+            android:src="@drawable/colab"
+            android:layout_gravity="center_vertical"/>
+
+        <!-- TITLE & SUBTITLE COLUMN (AFTER LOGO) -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:id="@+id/toolbarTitle"
+                android:text="Collab Partner"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/accent"/>
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="20dp"
+                android:id="@+id/toolbarSubtitle"
+                android:text="Connect and Collaborate"
+                android:textSize="12sp"
+                android:textColor="@color/textSecondary"/>
+        </LinearLayout>
+
+        <!-- SPACER -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+            
+        <TextView
+            android:id="@+id/txtStreak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 🔥"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FF9800"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="12dp"/>
+
+        <!-- logout ICON -->
+        <ImageView
+            android:id="@+id/btnLogout"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="8dp"
+            android:src="@drawable/logout"
+            android:background="@android:color/white"/>
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <!-- TABS -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/backround"
+        app:tabIndicatorColor="@color/primary"
+        app:tabIndicatorHeight="3dp"
+        app:tabSelectedTextColor="@color/primary"
+        app:tabTextColor="@color/Secondary_text"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@style/CustomTabTextAppearance" />
+
+    <!-- VIEWPAGER -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/backround"/>
+
+</LinearLayout>

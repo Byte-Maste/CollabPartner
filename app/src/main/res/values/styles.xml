@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomChipStyle" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="chipBackgroundColor">@color/white</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="chipStrokeColor">@color/text</item>     <!-- optional border -->
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipCornerRadius">10dp</item>
+    </style>
+    <style name="CustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">30sp</item>  <!-- Change size here -->
+    </style>
+
+</resources>

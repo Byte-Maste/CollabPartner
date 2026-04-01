@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp"
+        android:background="@drawable/dialog_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create New Job"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="4dp"
+                android:textColor="@color/text"/>
+
+            <ImageView
+                android:id="@+id/btnClose"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_close"
+                android:layout_alignParentRight="true"
+                android:padding="4dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job Title"
+            android:textStyle="bold"
+            android:textColor="@color/text"/>
+
+        <EditText
+            android:id="@+id/inputJobTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. Frontend Developer"
+            android:background="@drawable/input_bg"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@color/text"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/inputJobDesc"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="top"
+            android:hint="Describe requirements..."
+            android:background="@drawable/input_bg"
+            android:padding="10dp"
+            android:textColor="@color/text"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/inputCompany"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Company Name"
+                android:background="@drawable/input_bg"
+                android:textColor="@color/text"
+                android:padding="10dp"
+                android:layout_marginRight="5dp"/>
+            <EditText
+                android:id="@+id/inputJobLocation"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:hint="Location"
+                android:background="@drawable/input_bg"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type &amp; Budget"
+            android:textStyle="bold"
+            android:textColor="@color/text"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerType"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:entries="@array/job_types"
+                android:background="@drawable/input_bg"
+                android:layout_marginRight="5dp"/>
+
+            <EditText
+                android:id="@+id/inputBudget"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="$3000-5000"
+                android:background="@drawable/input_bg"
+                android:textColor="@color/text"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Required Skills (Comma separated)"
+            android:textColor="@color/text"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/inputSkills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="React, Java, Python"
+            android:textColor="@color/text"
+            android:background="@drawable/input_bg"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deadline"
+            android:textStyle="bold"
+            android:textColor="@color/text"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/inputDeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="dd-mm-yyyy"
+            android:background="@drawable/input_bg"
+            android:textColor="@color/text"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btnSubmitJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post Opportunity"
+            android:backgroundTint="@color/text"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

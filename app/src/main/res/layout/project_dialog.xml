@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="18dp"
+    android:background="@drawable/dialog_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create New Project"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"
+            android:textColor="@color/text"/>
+
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_close"
+            android:layout_alignParentRight="true"
+            android:padding="4dp"/>
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start a new collaborative project."
+        android:textSize="14sp"
+        android:paddingBottom="12dp"
+        android:textColor="@color/textSecondary"/>
+
+    <EditText
+        android:id="@+id/inputProjectTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Project title"
+        android:padding="10dp"
+        android:textColor="@color/primary"
+        android:background="@drawable/input_bg"
+        app:hintTextColor="@color/text"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/Secondary_text"/>
+
+    <EditText
+        android:id="@+id/inputProjectDesc"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:hint="Project description"
+        android:gravity="top"
+        android:padding="10dp"
+        android:background="@drawable/input_bg"
+        android:textColor="@color/primary"
+        android:layout_marginTop="10dp"
+        app:hintTextColor="@color/text"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/Secondary_text"/>
+
+    <EditText
+        android:id="@+id/inputGithub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="GitHub link "
+        android:padding="10dp"
+        android:textColor="@color/primary"
+        android:background="@drawable/input_bg"
+        android:layout_marginTop="10dp"
+        app:hintTextColor="@color/text"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/Secondary_text"/>
+
+    <Button
+        android:id="@+id/btnCreateProject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Project"
+        android:backgroundTint="@color/text"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="bg_screen">#F9FAFC</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="primary_navy">#00acff</color>
+    <color name="Secondary_text">#64748b</color>
+    <color name="input_bg">#EFF0F2</color>
+    <color name="muted_text">#535D6E</color>
+    <color name="accent_blue">#2E7DFF</color>
+    <color name="primary_navy_dark">#142036</color>
+
+
+    <color name="primary">#1a2b4b</color>// Dark Navy for buttons/headers
+    <color name="backround">#f8fafc</color> // Light blruish-gray background
+    <color name="card">#ffffff</color>
+    <color name="text">#0f172a</color>// Dark Slate
+    <color name="textSecondary">#64748b</color>
+    <color name="border">#e2e8f0</color>
+    <color name="accent">#3b82f6</color>// Bright blue
+    <color name="success">#10b981</color> //green
+    <color name="danger">#ef4444</color> //red
+    <color name="inputBackground">#ffffff</color> //white
+    <color name="tabInactive">#94a3b8</color> //grey
+    <color name="tabActive">#1a2b4b</color> //shading blue
+
+
+</resources>
